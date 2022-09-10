@@ -1,0 +1,46 @@
+/* Here goes all the common CSS including CSS reset */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --border-top: 2px solid rgb(109, 0, 140);
+  --border-right: 2px solid rgb(36, 0, 94);
+  --border-bottom: 2px solid rgb(59, 0, 90);
+  --border-left: 2px solid rgb(80, 68, 160);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+::selection {
+  color: white;
+  background-color: rgb(73, 73, 73);
+}
+p {
+  line-height: 1.5;
+  letter-spacing: .6px;
+}
+
+@media screen and (max-width: 481px) {
+  p {
+    line-height: 1.4;
+  }
+}
